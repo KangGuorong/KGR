@@ -196,9 +196,11 @@ else:
     print('{} is not a palindrome'.format(n))
 '''
 #12
+'''
 a,b,c = eval(raw_input('Enter three edges:'))
 C=a + b + c
 if (a + b) > c:
     print('The perimeteris {}'.format(C))
 else:
     print('illegal')
+'''
