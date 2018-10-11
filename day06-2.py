@@ -94,5 +94,48 @@ def reverse(s):
 s = raw_input('Enter a string:')
 reverse(s)
 '''
-#8
+#7
+'''
+def checkCard(card_num):
+    card_list = list(card_num)   #zhuanwei list
+    Res = 0
+    Res2 = 0
+    for i in range(len(card_list)):
+        res = int(card_list[i]) * 2
+        if  res >= 10:
+            res1 = res % 10  # ge wei
+            res2 = res // 10 # shi wei
+            res3 = res2 +res1
+            Res += res3
+        else:
+            Res += res
+        if i % 2 != 0:
+            Res2 += int(card_list[i])
+    RES = Res + Res2
+    if RES % 10 ==0:
+        print('hefa')
+    else:
+        print('buhefa')
+card_num = '438857601840707'
+checkCard(card_num)
 
+'''
+
+#8
+'''
+def checkISBN(str_):
+    str_list = list(str_)
+    sum1 = 0
+    for i in range (len(str_list)):
+        if i % 2 ==0:
+            res = int(str_list[i]) * 3
+        else:
+            res = int(str_list[i])
+        sum1 += res
+    RES = 10 -sum1 % 10
+    if RES == 10:
+        RES = 0
+    print(RSE)
+str_ = input('>>')
+checkISBN(str_)
+'''
