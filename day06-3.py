@@ -133,4 +133,39 @@ l = lst.split(' ')
 fun(l)
 '''
 #11
+'''
+import random
+def youhuiquan():
+    list1 = [1,2,3,4,5,6,7,8,9,10,11,12,13]
+    list2 = ['h','t','m','f']
+    list3 = []
+    count = 0
+    while len(list3) !=4:
+        count +=1
+        r1 = random.randint(0,12)
+        r2 = random.randint(0,3)
+        if list2[r2] not in list3:
+            print('huo de pai : {} {}'.format(list2[r2],list1[r1]))
+            list3.append(list2[r2])
+    print('Pick:' + str(count))
+youhuiquan()
 
+'''
+
+#12
+'''
+def isConsecutveFour(values):
+    list1 = list(str(values))
+    if len(list1) >= 4:
+        for i in range(len(list1)-3):
+            if list1[i] == list1[i+1] and list1[i] == list1[i+2] and list1[i] == list1[i+3]:
+                print('you')
+                break
+            else:
+                print('meiyou')
+                break
+    else:
+        print('shibei')
+values = raw_input('>>')
+isConsecutveFour(values)
+'''
